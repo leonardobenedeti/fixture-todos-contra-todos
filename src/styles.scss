@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "node_modules/bootstrap/scss/bootstrap";
+header {
+    nav {
+        width: 100%;
+    }
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+        nav {
+            width: 80%;
+        }
+    }
+}
+
+$primary: $blue !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-800 !default;
+$theme-colors: ( primary: $primary, secondary: $secondary, success: $success, info: $info, warning: $warning, danger: $danger, light: $light, dark: $dark) !default;

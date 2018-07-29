@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-md-10">
+        <h3>Equipos</h3>
+    </div>
+    <div class="col-md-2">
+        <fa-icon style="cursor: pointer;" (click)="borrarEquipo()" class="big-icon " [icon]="faTrash "></fa-icon>
+    </div>
+</div>
+<div class="row ">
+    <div class="col-md-12 " *ngFor="let equipo of equipos; let i = index">
+        <a style="cursor: pointer; " class=" list-group-item clearfix " (click)="equipoSeleccion(i)" [ngClass]="{'active': i == indexEquipo}">{{ equipo.nombre }}</a>
+    </div>
+</div>

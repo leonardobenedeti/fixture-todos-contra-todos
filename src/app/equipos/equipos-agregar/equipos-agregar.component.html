@@ -1,0 +1,7 @@
+<nav class="navbar navbar-light bg-light justify-content-between">
+    <a class="navbar-brand">Generador de grupos</a>
+    <form class="form-group form-inline" (ngSubmit)="agregarEquipo()">
+        <input class="form-control mr-sm-2" type="text" placeholder="Nuevo equipo" [formControl]="nombreEquipo" required>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" [disabled]="!nombreEquipo.valid">Agregar</button>
+    </form>
+</nav>
